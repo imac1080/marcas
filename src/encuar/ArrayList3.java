@@ -7,12 +7,14 @@ public class ArrayList3 {
 		int hola=0;
 		double old = System.currentTimeMillis();
 		ArrayList<Integer> AList = new ArrayList<Integer>();
-		for (int i = 0; i < 50; i++) {
+		for (int i = 0; i < 500; i++) {
 			AList.add(i);
 		}
-		for (int i = 0; i < 20; i++) {
+		//TIENE QUE SER 500
+		for (int i = 0; i < 500; i++) {
 			AList.remove(0);
 		}
+		//TIENE QUE SER 500
 		double neww = System.currentTimeMillis();
 		System.out.println(neww - old);
 		System.out.println(AList);
